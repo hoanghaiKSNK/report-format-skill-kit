@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+.vscode/
+artifacts/
+reference-files/
+*.docx
+*.pdf
+*.zip

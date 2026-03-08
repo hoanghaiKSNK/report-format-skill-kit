@@ -1,0 +1,49 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sơ đồ ý tưởng cốt lõi cho tái tạo báo cáo theo mẫu chuẩn</title>
+  <desc id="desc">Sơ đồ ba giai đoạn cho thấy cách biến một biểu mẫu đã duyệt thành bộ quy tắc máy đọc được và quy trình sinh báo cáo có kiểm soát.</desc>
+  <rect width="1280" height="720" fill="#F7F4EC"/>
+  <rect x="36" y="36" width="1208" height="648" rx="28" fill="#FFFDF8" stroke="#D6D0C2" stroke-width="2"/>
+  <text x="72" y="92" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Từ file Word mẫu đến specification mà AI có thể làm theo</text>
+  <text x="72" y="128" fill="#4D6175" font-family="Segoe UI, Arial, sans-serif" font-size="18">Điểm khó nhất là bóc được cấu trúc ngầm của biểu mẫu: thứ tự mục, bảng, merge, dòng tổng, ghi chú, font và layout.</text>
+
+  <rect x="72" y="170" width="332" height="414" rx="24" fill="#E9F2FF" stroke="#6A95C8" stroke-width="2"/>
+  <rect x="108" y="216" width="260" height="96" rx="18" fill="#FFFFFF" stroke="#6A95C8" stroke-width="2"/>
+  <rect x="108" y="346" width="260" height="96" rx="18" fill="#FFFFFF" stroke="#6A95C8" stroke-width="2"/>
+  <text x="108" y="202" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">1. Chốt chuẩn cần đạt</text>
+  <text x="238" y="256" text-anchor="middle" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Biểu mẫu đã duyệt</text>
+  <text x="238" y="282" text-anchor="middle" fill="#557086" font-family="Segoe UI, Arial, sans-serif" font-size="16">artifact thực sự phải khớp</text>
+  <text x="238" y="386" text-anchor="middle" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Checklist nghiệm thu</text>
+  <text x="238" y="412" text-anchor="middle" fill="#557086" font-family="Segoe UI, Arial, sans-serif" font-size="16">thế nào mới là đạt</text>
+
+  <rect x="474" y="170" width="332" height="414" rx="24" fill="#FFF0DE" stroke="#D59B4A" stroke-width="2"/>
+  <rect x="510" y="206" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#D59B4A" stroke-width="2"/>
+  <rect x="510" y="318" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#D59B4A" stroke-width="2"/>
+  <rect x="510" y="430" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#D59B4A" stroke-width="2"/>
+  <text x="510" y="202" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">2. Bóc format thành quy tắc tường minh</text>
+  <text x="640" y="244" text-anchor="middle" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Liệt kê cấu trúc thật</text>
+  <text x="640" y="268" text-anchor="middle" fill="#866741" font-family="Segoe UI, Arial, sans-serif" font-size="16">thứ tự mục, bảng, header</text>
+  <text x="640" y="356" text-anchor="middle" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Liệt kê ràng buộc bắt buộc</text>
+  <text x="640" y="380" text-anchor="middle" fill="#866741" font-family="Segoe UI, Arial, sans-serif" font-size="16">merge, dòng tổng, ghi chú, font, căn lề</text>
+  <text x="640" y="468" text-anchor="middle" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Viết specification và fix-layer</text>
+  <text x="640" y="492" text-anchor="middle" fill="#866741" font-family="Segoe UI, Arial, sans-serif" font-size="16">model, template, post-process, XML</text>
+
+  <rect x="876" y="170" width="332" height="414" rx="24" fill="#E7F7EF" stroke="#5DAB81" stroke-width="2"/>
+  <rect x="912" y="206" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#5DAB81" stroke-width="2"/>
+  <rect x="912" y="318" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#5DAB81" stroke-width="2"/>
+  <rect x="912" y="430" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#5DAB81" stroke-width="2"/>
+  <text x="912" y="202" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">3. Sinh và kiểm theo specification</text>
+  <text x="1042" y="248" text-anchor="middle" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Render template</text>
+  <text x="1042" y="272" text-anchor="middle" fill="#4F7A63" font-family="Segoe UI, Arial, sans-serif" font-size="16">tạo ra artifact đầu tiên</text>
+  <text x="1042" y="360" text-anchor="middle" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Post-process layout</text>
+  <text x="1042" y="384" text-anchor="middle" fill="#4F7A63" font-family="Segoe UI, Arial, sans-serif" font-size="16">sửa phần cấu trúc động nhạy cảm</text>
+  <text x="1042" y="472" text-anchor="middle" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">So khớp với mẫu</text>
+  <text x="1042" y="496" text-anchor="middle" fill="#4F7A63" font-family="Segoe UI, Arial, sans-serif" font-size="16">chỉ công nhận sau khi kiểm</text>
+
+  <path d="M404 377H474" stroke="#7A8793" stroke-width="4" stroke-linecap="round"/>
+  <path d="M458 365L474 377L458 389" stroke="#7A8793" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M806 377H876" stroke="#7A8793" stroke-width="4" stroke-linecap="round"/>
+  <path d="M860 365L876 377L860 389" stroke="#7A8793" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="420" y="614" width="440" height="44" rx="22" fill="#17324D"/>
+  <text x="640" y="642" text-anchor="middle" fill="#FFFDF8" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Kết quả: AI đọc được cấu trúc ẩn của file mẫu thay vì chỉ bắt chước bề ngoài</text>
+</svg>

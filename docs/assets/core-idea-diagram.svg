@@ -1,0 +1,49 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Core idea diagram for agency report format reconstruction</title>
+  <desc id="desc">A three-stage workflow showing how an approved report form becomes machine-readable rules and then a controlled generation pipeline.</desc>
+  <rect width="1280" height="720" fill="#F7F4EC"/>
+  <rect x="36" y="36" width="1208" height="648" rx="28" fill="#FFFDF8" stroke="#D6D0C2" stroke-width="2"/>
+  <text x="72" y="92" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">From approved Word form to a specification AI can actually follow</text>
+  <text x="72" y="128" fill="#4D6175" font-family="Segoe UI, Arial, sans-serif" font-size="18">The hardest part is extracting the hidden structure: section order, tables, merges, totals, notes, typography, and layout rules.</text>
+
+  <rect x="72" y="170" width="332" height="414" rx="24" fill="#E9F2FF" stroke="#6A95C8" stroke-width="2"/>
+  <rect x="108" y="216" width="260" height="96" rx="18" fill="#FFFFFF" stroke="#6A95C8" stroke-width="2"/>
+  <rect x="108" y="346" width="260" height="96" rx="18" fill="#FFFFFF" stroke="#6A95C8" stroke-width="2"/>
+  <text x="108" y="202" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">1. Lock the target</text>
+  <text x="238" y="256" text-anchor="middle" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Approved form</text>
+  <text x="238" y="282" text-anchor="middle" fill="#557086" font-family="Segoe UI, Arial, sans-serif" font-size="16">the real artifact to match</text>
+  <text x="238" y="386" text-anchor="middle" fill="#17324D" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Acceptance checklist</text>
+  <text x="238" y="412" text-anchor="middle" fill="#557086" font-family="Segoe UI, Arial, sans-serif" font-size="16">what counts as good enough</text>
+
+  <rect x="474" y="170" width="332" height="414" rx="24" fill="#FFF0DE" stroke="#D59B4A" stroke-width="2"/>
+  <rect x="510" y="206" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#D59B4A" stroke-width="2"/>
+  <rect x="510" y="318" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#D59B4A" stroke-width="2"/>
+  <rect x="510" y="430" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#D59B4A" stroke-width="2"/>
+  <text x="510" y="202" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">2. Extract the format explicitly</text>
+  <text x="640" y="244" text-anchor="middle" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">List the real structure</text>
+  <text x="640" y="268" text-anchor="middle" fill="#866741" font-family="Segoe UI, Arial, sans-serif" font-size="16">sections, tables, headers</text>
+  <text x="640" y="356" text-anchor="middle" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">List the required constraints</text>
+  <text x="640" y="380" text-anchor="middle" fill="#866741" font-family="Segoe UI, Arial, sans-serif" font-size="16">merges, totals, notes, fonts, alignment</text>
+  <text x="640" y="468" text-anchor="middle" fill="#5F3B00" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Write spec and fix-layer map</text>
+  <text x="640" y="492" text-anchor="middle" fill="#866741" font-family="Segoe UI, Arial, sans-serif" font-size="16">model, template, post-process, XML</text>
+
+  <rect x="876" y="170" width="332" height="414" rx="24" fill="#E7F7EF" stroke="#5DAB81" stroke-width="2"/>
+  <rect x="912" y="206" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#5DAB81" stroke-width="2"/>
+  <rect x="912" y="318" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#5DAB81" stroke-width="2"/>
+  <rect x="912" y="430" width="260" height="88" rx="18" fill="#FFFFFF" stroke="#5DAB81" stroke-width="2"/>
+  <text x="912" y="202" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">3. Generate and verify against the spec</text>
+  <text x="1042" y="248" text-anchor="middle" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Template render</text>
+  <text x="1042" y="272" text-anchor="middle" fill="#4F7A63" font-family="Segoe UI, Arial, sans-serif" font-size="16">generate the first artifact</text>
+  <text x="1042" y="360" text-anchor="middle" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Layout post-process</text>
+  <text x="1042" y="384" text-anchor="middle" fill="#4F7A63" font-family="Segoe UI, Arial, sans-serif" font-size="16">repair dynamic structure safely</text>
+  <text x="1042" y="472" text-anchor="middle" fill="#164B30" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Compare to reference</text>
+  <text x="1042" y="496" text-anchor="middle" fill="#4F7A63" font-family="Segoe UI, Arial, sans-serif" font-size="16">verify before claiming parity</text>
+
+  <path d="M404 377H474" stroke="#7A8793" stroke-width="4" stroke-linecap="round"/>
+  <path d="M458 365L474 377L458 389" stroke="#7A8793" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M806 377H876" stroke="#7A8793" stroke-width="4" stroke-linecap="round"/>
+  <path d="M860 365L876 377L860 389" stroke="#7A8793" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="448" y="614" width="384" height="44" rx="22" fill="#17324D"/>
+  <text x="640" y="642" text-anchor="middle" fill="#FFFDF8" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Result: AI reads the hidden structure of the reference file instead of imitating surface appearance</text>
+</svg>
