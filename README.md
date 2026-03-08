@@ -2,11 +2,13 @@
 
 Vietnamese version: [README-VN.md](README-VN.md)
 
-This repository describes an AI agent skill for generating DOCX outputs that stay close to an approved agency format. The focus is not placeholder replacement. The focus is reading approved DOCX, PDF, and when available XML artifacts, converting them into a canonical format specification and execution plan, then producing a reviewable DOCX with validation evidence.
+This repository grew out of a practical problem: generating agency-standard reports every month while the data changes and, with it, the report structure itself. Mail merge is still useful when a document only needs simple placeholder replacement. But once a report contains tables with changing row counts, changing columns, complex merged cells, charts, and strict formatting rules, the problem is no longer just filling a Word template.
+
+The harder question is: how do you help AI understand the structure of a long report, sometimes dozens of pages, without manually describing every row, table, merge rule, and formatting constraint? This repository describes one answer: let an AI agent read the right reference artifacts, analyze DOCX, PDF, and when possible XML structure, then turn that analysis into a canonical format specification, an execution plan, and a validated DOCX generation pipeline.
 
 ## Project Overview
 
-This repository targets report generation problems where format fidelity matters as much as the values.
+This is not just a technical demo. It documents an attempt to solve a real report-automation problem: reproducing complex agency-standard reports with AI while keeping the output structurally faithful to the approved form.
 
 The real task is not just filling a Word template. It is reproducing a final artifact when the report contains:
 
@@ -14,9 +16,12 @@ The real task is not just filling a Word template. It is reproducing a final art
 - multi-row headers
 - horizontal and vertical merges
 - mandatory total rows and note rows
+- charts or other data-driven visual sections
 - typography, spacing, page flow, and Word/PDF constraints that affect acceptance
 
 That is why mail merge or placeholder replacement is not enough. Those techniques can fill fixed fields, but they do not reliably reproduce table schema, merge maps, mandatory rows, or layout-sensitive DOCX and PDF behavior.
+
+This repository makes that problem more understandable and repeatable by documenting the approach, the working pipeline, and the main friction points that must be handled.
 
 ## Human Input Boundary
 

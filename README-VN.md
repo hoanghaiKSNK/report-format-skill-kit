@@ -2,11 +2,13 @@
 
 English version: [README.md](README.md)
 
-Repo này mô tả một skill cho Agent AI dùng để tạo DOCX bám sát form cơ quan từ bộ artifact tham chiếu đã được duyệt. Trọng tâm của skill không phải là thay placeholder, mà là đọc đúng cấu trúc của DOCX, PDF, và khi có thể là XML, rồi biến chúng thành một canonical format specification, một execution plan, và một pipeline sinh DOCX có kiểm chứng.
+Repo này ra đời từ một bài toán thực tế: cần tạo báo cáo chuẩn cơ quan theo từng tháng, trong khi dữ liệu thay đổi và kéo theo thay đổi về cấu trúc trình bày. Mail merge còn đủ dùng khi report chỉ có placeholder cố định. Nhưng khi report có bảng tăng giảm số dòng, thay đổi số cột, merge ngang dọc phức tạp, biểu đồ, và nhiều quy tắc trình bày phải giữ nguyên, thì bài toán không còn là thay chữ trong mẫu Word nữa.
+
+Vấn đề lớn hơn là: làm sao để AI hiểu được cấu trúc của một báo cáo dài hàng chục trang mà không phải mô tả thủ công từng dòng, từng bảng, từng merge? Repo này mô tả cách tiếp cận để giải bài toán đó: cho Agent AI đọc đúng bộ artifact tham chiếu, phân tích DOCX, PDF, và khi có thể là XML, rồi biến chúng thành canonical format specification, execution plan, và pipeline sinh DOCX có kiểm chứng.
 
 ## Project Overview
 
-Đây là repo mô tả một bài toán report generation có format fidelity cao.
+Đây không chỉ là một demo kỹ thuật. Đây là quá trình tìm cách tự động hóa việc tạo báo cáo chuẩn cơ quan có cấu trúc phức tạp bằng AI.
 
 Bài toán không dừng ở việc tính số liệu hay đổ dữ liệu vào một mẫu Word. Bài toán thật là tái tạo đúng artifact cuối cùng khi báo cáo có:
 
@@ -14,11 +16,12 @@ Bài toán không dừng ở việc tính số liệu hay đổ dữ liệu vào
 - header nhiều tầng
 - merged cells theo chiều ngang hoặc dọc
 - total rows và note rows bắt buộc
+- biểu đồ hoặc thành phần hiển thị sinh theo dữ liệu
 - typography, spacing, page flow, và các ràng buộc Word/PDF cần giữ nguyên
 
 Vì vậy, mail merge hoặc placeholder replacement là chưa đủ. Chúng có thể điền nội dung vào vị trí cố định, nhưng không đủ để tái tạo đúng table schema, merge map, total rows, note rows, hoặc hành vi layout của DOCX và PDF ở các section nhạy cảm.
 
-Repo này chuẩn hóa cách để Agent AI xử lý đúng lớp bài toán đó.
+Repo này chuẩn hóa cách để Agent AI xử lý đúng lớp bài toán đó, đồng thời ghi lại cách tiếp cận, pipeline triển khai, và các khó khăn chính cần vượt qua.
 
 ## Human Input Boundary
 
