@@ -100,7 +100,7 @@ Core files and folders in this shareable repository are:
   Base repository rules for working on strict report-format problems.
 - [scripts/extract_format_spec.py](scripts/extract_format_spec.py)  
   Sample extractor that reads DOCX or XML and emits a draft canonical format specification.
-- [artifacts/example-format-spec.md](artifacts/example-format-spec.md)  
+- [docs/example-format-spec.md](docs/example-format-spec.md)  
   Example of the intermediate output the agent should produce before changing code or finalizing generation.
 - [docs/how-we-read-the-approved-word-form.md](docs/how-we-read-the-approved-word-form.md)  
   Technical note on reading DOCX, XML, and PDF as layered source-of-truth artifacts.

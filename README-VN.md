@@ -102,7 +102,7 @@ Các thành phần cốt lõi trong repo chia sẻ này là:
   Tập luật nền cho AI khi làm việc với bài toán report format chặt.
 - [scripts/extract_format_spec.py](scripts/extract_format_spec.py)  
   Script mẫu để đọc DOCX hoặc XML và tạo draft canonical format specification.
-- [artifacts/example-format-spec-VN.md](artifacts/example-format-spec-VN.md)  
+- [docs/example-format-spec-VN.md](docs/example-format-spec-VN.md)  
   Ví dụ đầu ra trung gian mà Agent AI nên tạo ra trước khi sửa code hoặc render chính thức.
 - [docs/how-we-read-the-approved-word-form-VN.md](docs/how-we-read-the-approved-word-form-VN.md)  
   Mô tả kỹ thuật cách đọc DOCX, XML, và PDF như source of truth nhiều lớp.
